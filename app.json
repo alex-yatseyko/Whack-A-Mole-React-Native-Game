@@ -1,0 +1,12 @@
+{
+  "name": "whackamole",
+  "displayName": "whackamole",
+  "expo": {
+    "name": "whackamole",
+    "slug": "whackamole",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
