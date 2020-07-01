@@ -1,4 +1,5 @@
 import React from 'react'
+import { Dimensions } from 'react-native'
 import { SvgXml } from 'react-native-svg';
 import { View } from 'react-native';
 
@@ -46,7 +47,7 @@ export const Dirt = () => {
       `}
     return (
         <View>
-            <SvgXml xml={DirtSvg()} width={50} height={50} />
+            <SvgXml xml={DirtSvg()} width={(Dimensions.get('window').width / 2) - 10} height={50} />
         </View>
     )
 }

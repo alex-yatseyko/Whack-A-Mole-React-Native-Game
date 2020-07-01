@@ -25,14 +25,15 @@ const MainGameScreen = () => {
           <Text style={styles.gameTitle}>0</Text>
         </View>
       </View>
-      {/* <SvgXml xml={Mole()} width={50} height={50} /> */}
-      <Dirt />
-      <Dirt />
-      <Dirt />
-      <Dirt />
-      <Dirt />
-      <Dirt />
-      <Mole />
+      <View style={styles.dirtsWrapper}>
+        <Dirt />
+        <Dirt />
+        <Dirt />
+        <Dirt />
+        <Dirt />
+        <Dirt />
+      </View>
+      {/* <Mole /> */}
     </View>
   );
 }
@@ -40,9 +41,8 @@ const MainGameScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    // justifyContent: 'center',
     backgroundColor: '#ffc600',
   },
   gameTitle: {
@@ -63,5 +63,11 @@ const styles = StyleSheet.create({
   },
   gameTitleWrapper: {
     // flexDirection: 'row',
-  }
+  },
+  dirtsWrapper: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    flex: 1,
+    alignContent: 'space-around',
+  },
 });
